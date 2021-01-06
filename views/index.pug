@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  br
+  p
+   a(href='javascript:void(0)' class='btn btn-primary' id='importdata') Import CSV 
+   | &nbsp;&nbsp;&nbsp;
+   br
+   br
+   a(href='javascript:void(0)' class='btn btn-primary' id='fetchdata') Fetch Data
+  br  
+  p#message.alert.alert-success(style='display:none')
+  br
+  table.table.table-bordered
+    thead
+        tr
+            th #
+            th id
+            th orderate
+            th region
+            th name
+            th product
+            th quantity
+            th unitcost
+            th total
+    tbody#trdata
+        tr
+            td(colspan='3') 
